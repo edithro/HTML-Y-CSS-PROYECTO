@@ -1,0 +1,1291 @@
+body{
+    margin: 0%;
+    padding: 0;
+}
+.encabezado{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    background-color: rgba(248, 180, 180, 0.8);
+    align-items: center;
+    position: fixed;
+    z-index: 6;
+    max-width: 1349px;
+ }
+.logo{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    max-width: 1349px;
+}
+.logo img{
+    object-fit: cover;
+}
+.navbar{
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    max-width: 1349px;
+}
+.lista-navegacion{
+    list-style: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1349px;
+}
+.lista-navegacion a{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+}
+.lista-navegacion a:hover{
+    color: rgb(228, 12, 35);
+    font-size: 1.02em;
+}
+.contenedorboton{
+    width: 15%;
+    height: 5vh;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    border-color: rgb(248, 180, 180);
+    border-style: ridge;
+    align-items: center;
+    border-width: 2px;
+    border-radius: 4px;
+    max-width: 1349px;
+
+}
+.contenedorboton a{
+    text-decoration: none;
+    color: initial;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );    
+}
+.contenedorboton:hover{
+    background-color: rgb(217, 137, 137);
+}
+.contenedorboton a:hover{
+    color: lavender;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.contenedor-slide{
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    max-width: 1400px;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 2000ms;
+    animation-name: autoplay;
+    animation-duration: 13s;
+    animation-duration: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+    justify-content: center;
+}
+.compilacion{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.compilacion-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 500ms;
+}
+.compilacion-item:hover{
+    transform: scale(2);
+}
+.compilacion-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 500ms;
+}
+.compilacion-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0 );
+}
+input[id="1"]:checked ~ .compilacion .compilacion-item[for="1"]{
+    background: #fff;
+}
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100%*1), 0, 0 );
+}
+input[id="2"]:checked ~ .compilacion .compilacion-item[for="2"]{
+    background: #fff;
+}
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100%*2), 0, 0 );
+}
+input[id="3"]:checked ~ .compilacion .compilacion-item[for="3"]{
+    background: #fff;
+}
+input[id="4"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100%*3), 0, 0 );
+}
+input[id="4"]:checked ~ .compilacion .compilacion-item[for="4"]{
+    background: #fff;
+}
+input[id="5"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100%*4), 0, 0 );
+}
+input[id="5"]:checked ~ .compilacion .compilacion-item[for="5"]{
+    background: #fff;
+}
+input[id="6"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100%*5), 0, 0 );
+}
+input[id="6"]:checked ~ .compilacion .compilacion-item[for="6"]{
+    background: #fff;
+}
+
+@keyframes autoplay{
+    16%{
+        transform: translate3d(calc(-100%*0), 0, 0);
+    }
+    32%{
+        transform: translate3d(calc(-100%*1), 0, 0);
+    }
+    48%{
+        transform: translate3d(calc(-100%*2), 0, 0);
+    }
+    64%{
+        transform: translate3d(calc(-100%*3), 0, 0);
+    }
+    80%{
+        transform: translate3d(calc(-100%*4), 0, 0);
+    }
+    96%{
+        transform: translate3d(calc(-100%*5), 0, 0);
+    }
+}
+.quienessomos{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    display: inline-block;
+    background-color: rgba(252, 210, 222, 0.4);
+    align-items: center;
+    max-width: 1349px;
+}
+.contenedor1{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    max-width: 1349px;
+}
+.contenedor-fotocard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 1349px;
+}
+.fotocard{
+    width: 70%;
+    height: 125%;
+    background-image: url(./pngegg\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    background-position: center;
+    max-width: 1349px;
+}
+.contenedor-cardquienessomos{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    max-width: 1349px;
+}
+.card-quienessomos{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    display: block;
+    border: 2px solid rgb(217, 137, 137);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 0;
+    max-width: 1349px;
+ }
+ .card-quienessomos h2{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.7 );
+    font-size: 2em;
+    text-align: center;
+    max-width: 1349px;
+ }
+.card-quienessomos p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+    text-align: justify;
+    text-indent: 10px;
+    font-size: .95em;
+    max-width: 1349px;
+}
+.servicios{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(252, 210, 222, 0.4);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    max-width: 1349px;
+}
+.contenedor-servicios1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1349px;
+}
+.logo1{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-image: url(./guarderia.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right; 
+    max-width: 1349px;   
+}
+.servicio1{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    display: inline-block;
+    padding: 7px;
+    max-width: 1349px;
+}
+.servicio1 h3{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.7 );
+    text-align: end;
+    max-width: 1349px;
+}
+.servicio1 p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+    text-align: right;
+    font-size: 0.9em;
+    max-width: 1349px;
+}
+.logo2{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-image: url(./pelu3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    max-width: 1349px;
+}
+.servicio2{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    display: inline-block;
+    padding: 7px;
+    max-width: 1349px;
+}
+.servicio2 h3{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.7 );
+    text-align: end;
+    max-width: 1349px;
+}
+.servicio2 p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+    text-align: right;
+    font-size: 0.9em;
+    max-width: 1349px;
+}
+.contenedor-servicios2{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1349px;
+}
+.foto-servicio{
+    width: 100%;
+    height: 70%;
+    background-image: url(./perroservicio2.png);
+    background-repeat: no-repeat;
+    background-size: 140%;
+    z-index: 3;
+    background-position: center;
+    max-width: 1349px;
+}
+.logo3{
+    width: 100%;
+    height: 13%;
+    display: flex;
+    margin-top: 5px;
+    background-image: url(./recreacion3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-width: 1349px;
+}
+.servicio3 h3{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.7 );
+    text-align: center;
+    max-width: 1349px;
+}
+.servicio3 p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+    text-align: center;
+    font-size: 0.9em;
+    max-width: 1349px;
+}
+.contenedor-servicios3{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1349px;
+}
+.logo4{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-image: url(./baño3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    max-width: 1349px;
+}
+.servicio4 h3{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.7 );
+    text-align: left;
+    max-width: 1349px;
+}
+.servicio4 p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+    text-align: left;
+    font-size: 0.9em;
+    max-width: 1349px;
+}
+.logo5{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-image: url(./Amor3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: initial;
+    max-width: 1349px;
+}
+.servicio5 h3{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.7 );
+    text-align: left;
+    max-width: 1349px;
+}
+.servicio5 p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+    text-align: left;
+    font-size: 0.9em;
+    max-width: 1349px;
+}
+.experiencias{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(252, 210, 222, 0.4);
+    align-items: center;
+    max-width: 1349px;
+}
+.contenedor-experiencias{
+    width: 98%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    background-image: url(./pngegg.png);
+    background-repeat: repeat;
+    background-size: contain;
+    border: 2px solid rgb(217, 137, 137);
+    border-radius: 5px;
+    display: inline-block;
+    align-items: center;
+    max-width: 1349px;
+}
+.titulo-experiencia{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-color: rgba(252, 210, 222, 0.8);
+    align-items: center;
+    justify-content: center;
+    max-width: 1349px;
+}
+.titulo-experiencia h2{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.7);
+    font-size: 2em;
+    text-align: center;    
+    max-width: 1349px;
+}
+.contenedor-cards{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    max-width: 1349px;
+}
+.card-experiencia1{
+    width: 23%;
+    height: 90%;
+    display: flex;
+    display: inline-block;
+    border: 3px solid rgb(217, 137, 137);
+    border-radius: 7px;
+    max-width: 1349px;
+}
+.kiara{
+    width: 100%;
+    height: 40%;
+    background-image: url(./Kiara.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    max-width: 1349px;
+}
+.texto-kiara{
+    width: 93%;
+    height: 56%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(252, 210, 222, 0.7);
+    margin: 0;
+    padding: 10px;
+    max-width: 1349px;
+ }
+.texto-kiara h4{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.8);
+    font-size: 1.5em;
+    text-align: center;
+    height: 5%;
+    max-width: 1349px;
+}
+.texto-kiara p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+    text-align: justify;
+    font-size: 0.9em;
+    max-width: 1349px;
+}
+.card-experiencia2{
+    width: 23%;
+    height: 90%;
+    display: flex;
+    display: inline-block;
+    border: 3px solid rgb(217, 137, 137);
+    border-radius: 7px;
+    max-width: 1349px;
+}
+.lupe{
+    width: 100%;
+    height: 40%;
+    background-image: url(./Lupe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    max-width: 1349px;
+}
+.texto-lupe{
+    width: 93%;
+    height: 56%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(252, 210, 222, 0.7);
+    margin: 0;
+    padding: 10px;
+    max-width: 1349px;
+}
+.texto-lupe h4{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.8);
+    font-size: 1.5em;
+    text-align: center;
+    height: 5%; 
+    max-width: 1349px;
+}
+.texto-lupe p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+    text-align: justify;
+    font-size: 0.9em;
+    max-width: 1349px;
+}
+.card-experiencia3{
+    width: 23%;
+    height: 90%;
+    display: flex;
+    display: inline-block;
+    border: 3px solid rgb(217, 137, 137);
+    border-radius: 7px;
+    max-width: 1349px;
+}
+.chanchas{
+    width: 100%;
+    height: 40%;
+    background-image: url(./CocoFiona.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    max-width: 1349px;
+}
+.texto-chanchas{
+    width: 93%;
+    height: 56%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(252, 210, 222, 0.7);
+    margin: 0;
+    padding: 10px;
+    max-width: 1349px;
+}
+.texto-chanchas h4{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.8);
+    font-size: 1.5em;
+    text-align: center;
+    height: 5%;  
+    max-width: 1349px;
+}
+.texto-chanchas p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+    text-align: justify;
+    font-size: 0.9em;
+    max-width: 1349px;
+}
+.card-experiencia4{
+    width: 23%;
+    height: 90%;
+    display: flex;
+    display: inline-block;
+    border: 3px solid rgb(217, 137, 137);
+    border-radius: 7px;
+    margin-right: 1%;
+    max-width: 1349px;
+}
+.koby{
+    width: 100%;
+    height: 40%;
+    background-image: url(./Koby.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    max-width: 1349px;
+}
+.texto-koby{
+    width: 93%;
+    height: 56%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(252, 210, 222, 0.7);
+    margin: 0;
+    padding: 10px;
+    max-width: 1349px;
+}
+.texto-koby h4{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.8);
+    font-size: 1.5em;
+    text-align: center;
+    height: 5%;
+    max-width: 1349px;
+}
+.texto-koby p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+    text-align: justify;
+    font-size: 0.9em;
+    max-width: 1349px;
+}
+.contacto{
+    width: 100%;
+    height: 85%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(252, 210, 222, 0.4);
+    align-items: center;
+    max-width: 1349px;
+}
+.contenedor-contacto{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1349px;
+}
+.p-contacto{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1349px;
+}
+.p-contacto h3{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.8);
+    font-size: 1.2em;
+    text-align: center;
+    height: 5%;
+}
+.p-contacto p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );
+    text-align: justify;
+    font-size: 0.9em;
+}
+.contenedor-contacto2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1349px;
+}
+form{
+    background: rgb(108, 200, 212);
+    width: 70%;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(12, 219, 247, 0.8);
+    max-width: 1349px;
+}
+.form{
+    width: 100%;
+    margin: auto;
+}
+.form h2{
+    font-family: 'Courgette', cursive;
+    color: rgb(27, 26, 15, 0.7);
+    font-size: 2em;
+    text-align: center;    
+}
+.grupo{
+    position: relative;
+    margin: 45px;
+}
+.grupo input, textarea{
+    background: none;
+    color:rgb(221, 97, 97);
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid rgb(92, 91, 91);
+    resize: none;
+}
+.grupo input:focus,textarea:focus{
+    outline: none;
+    color: rgb(94,93,93);
+}
+.grupo input:focus~label, 
+input:valid~label, 
+textarea:focus~label, textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 20px;
+    color: rgb(216, 110, 175);
+}
+.grupo label{
+    color: rgb(92, 91, 91);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+.grupo input:focus~.barra::before, textarea:focus~.barra::before{
+    width: 100%;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, rgb(216, 110, 175), rgb(252, 92, 125));
+    transition: 0.3s ease all;
+    left: 0%;
+}
+button{
+    background: rgb(252, 92, 125);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border:none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 26, 15 );   
+}
+button:hover{
+    background-color: rgb(245, 236, 236);
+    color: rgb(252, 92, 125);
+    font-weight: bolder;
+}
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(217, 137, 137);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-iconos{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    padding: 20px;
+    max-width: 1349px;
+}
+.contenedor-iconos i {
+    color: white;
+    font-size: 2em;
+    margin: 0px 10px;
+}
+@media (min-width: 320px) and (max-width: 1349px){
+    .encabezado{
+        height: 3%;
+    }
+    .logo{
+        width: 20%;
+        height: 70%;
+    }
+    .contenedorboton{
+        width: 18%;
+        height: 2vh;
+        align-items: center;
+    }
+    .contenedor-slide{
+        height: 30%;
+    }
+    .quienessomos{
+        width: 100%;
+        height: 30%;
+    }
+    .card-quienessomos{
+        width: 70%;
+        height: 80%;
+    }
+    .card-quienessomos p{
+        font-size: .65em;
+    }
+    .servicios{
+        height: 35%;
+    }
+    .contenedor-servicios1{
+        padding: 10px;
+    }
+    .logo1{
+        height: 7%;
+    }
+    .servicio1{
+        height: 30%;
+        padding: 7px;
+    }
+    .servicio1 p{
+        font-size: 0.65em;
+    }
+    .logo2{
+        height: 7%;
+    }
+    .servicio2{
+        height: 30%;
+        padding: 7px;
+    }
+    .servicio2 p{
+        font-size: 0.65em;
+    }
+    .contenedor-servicios2{
+        padding: 10px;
+    }
+    .logo3{
+        height: 8%;
+    }
+    .servicio3 p{
+        font-size: 0.65em;
+    }
+    .foto-servicio{
+        height: 50%;
+    }
+    .contenedor-servicios3{
+        padding: 10px;
+    }
+    .logo4{
+        height: 7%;
+    }
+    .servicio4{
+        height: 30%;
+        padding: 7px;
+    }
+    .servicio4 p{
+        font-size: 0.65em;
+    }
+    .logo5{
+        height: 7%;
+    }
+    .servicio5{
+        height: 30%;
+        padding: 7px;
+    }
+    .servicio5 p{
+        font-size: 0.65em;
+    }
+    .experiencias{
+        height: 35%;
+    }
+    .contenedor-experiencias{
+        width: 95%;
+        height: 95%;
+    }
+    .titulo-experiencia{
+        width: 100%;
+        height: 8%;
+    }
+    .contenedor-cards{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .card-experiencia1{
+        width: 95%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+    .kiara{
+        width: 20%;
+        height: 100%;
+    }
+    .texto-kiara{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+    .texto-kiara h4{
+        height: 20%;
+        font-size: 1.5em;
+        padding: 5px;
+        }
+    .texto-kiara p{
+        padding: 5px;
+        font-size: 0.9em;
+    }
+    .card-experiencia2{
+        width: 95%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+    .lupe{
+        width: 20%;
+        height: 100%;
+    }
+    .texto-lupe{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+    .texto-lupe h4{
+        height: 20%;
+        font-size: 1.5em;
+        padding: 5px;
+        }
+    .texto-lupe p{
+        padding: 5px;
+        font-size: 0.9em;
+    }
+    .card-experiencia3{
+        width: 95%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+    .chanchas{
+        width: 20%;
+        height: 100%;
+    }
+    .texto-chanchas{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+    .texto-chanchas h4{
+        height: 20%;
+        font-size: 1em;
+        padding: 7px;
+        margin-bottom: 10%;
+        }
+    .texto-chanchas p{
+        padding: 5px;
+        font-size: 0.9em;
+    }
+    .card-experiencia4{
+        width: 95%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+    .koby{
+        width: 20%;
+        height: 100%;
+    }
+    .texto-koby{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+    .texto-koby h4{
+        height: 20%;
+        font-size: 1.5em;
+        padding: 5px;
+        }
+        .texto-koby p{
+        padding: 5px;
+        font-size: 0.9em;
+    }
+    .contacto{
+        height: 35%;
+    }
+    form{
+        width: 80%;
+    }
+    footer{
+        height: 4%;
+    }
+}
+@media (min-width: 320px) and (max-width: 768px){
+    .encabezado{
+        height: 15%;
+    }
+    .logo{
+        width: 20%;
+        height: 70%;
+    }
+    .lista-navegacion a{
+        font-size: 0.8em;
+    }
+    .contenedorboton{
+        width: 18%;
+        height: 3vh;
+        align-items: center;
+    }
+    .contenedorboton a{
+        font-size: 0.8em;
+    }
+    .contenedor-slide{
+        height: 50%;
+    }
+    .quienessomos{
+        width: 100%;
+        height: 30%;
+    }
+    .card-quienessomos{
+        width: 70%;
+        height: 80%;
+    }
+    .card-quienessomos p{
+        font-size: .65em;
+    }
+    .servicios{
+        height: 35%;
+    }
+    .contenedor-servicios1{
+        padding: 10px;
+    }
+    .logo1{
+        height: 7%;
+    }
+    .servicio1{
+        height: 30%;
+        padding: 7px;
+    }
+    .servicio1 p{
+        font-size: 0.65em;
+    }
+    .logo2{
+        height: 7%;
+    }
+    .servicio2{
+        height: 30%;
+        padding: 7px;
+    }
+    .servicio2 p{
+        font-size: 0.65em;
+    }
+    .contenedor-servicios2{
+        padding: 10px;
+    }
+    .logo3{
+        height: 8%;
+    }
+    .servicio3 p{
+        font-size: 0.65em;
+    }
+    .foto-servicio{
+        height: 50%;
+    }
+    .contenedor-servicios3{
+        padding: 10px;
+    }
+    .logo4{
+        height: 7%;
+    }
+    .servicio4{
+        height: 30%;
+        padding: 7px;
+    }
+    .servicio4 p{
+        font-size: 0.65em;
+    }
+    .logo5{
+        height: 7%;
+    }
+    .servicio5{
+        height: 30%;
+        padding: 7px;
+    }
+    .servicio5 p{
+        font-size: 0.65em;
+    }
+    .experiencias{
+        height: 35%;
+    }
+    .contenedor-experiencias{
+        width: 95%;
+        height: 95%;
+    }
+    .titulo-experiencia{
+        width: 100%;
+        height: 8%;
+    }
+    .contenedor-cards{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .card-experiencia1{
+        width: 95%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+    .kiara{
+        width: 20%;
+        height: 100%;
+    }
+    .texto-kiara{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+    .texto-kiara h4{
+        height: 20%;
+        font-size: 1.5em;
+        padding: 5px;
+        }
+    .texto-kiara p{
+        padding: 5px;
+        font-size: 0.9em;
+    }
+    .card-experiencia2{
+        width: 95%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+    .lupe{
+        width: 20%;
+        height: 100%;
+    }
+    .texto-lupe{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+    .texto-lupe h4{
+        height: 20%;
+        font-size: 1.5em;
+        padding: 5px;
+        }
+    .texto-lupe p{
+        padding: 5px;
+        font-size: 0.9em;
+    }
+    .card-experiencia3{
+        width: 95%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+    .chanchas{
+        width: 20%;
+        height: 100%;
+    }
+    .texto-chanchas{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+    .texto-chanchas h4{
+        height: 20%;
+        font-size: 1em;
+        padding: 7px;
+        margin-bottom: 10%;
+        }
+    .texto-chanchas p{
+        padding: 5px;
+        font-size: 0.9em;
+    }
+    .card-experiencia4{
+        width: 95%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+    .koby{
+        width: 20%;
+        height: 100%;
+    }
+    .texto-koby{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+    .texto-koby h4{
+        height: 20%;
+        font-size: 1.5em;
+        padding: 5px;
+        }
+        .texto-koby p{
+        padding: 5px;
+        font-size: 0.9em;
+    }
+    .contacto{
+        height: 35%;
+    }
+    form{
+        width: 80%;
+    }
+    footer{
+        height: 4%;
+    }
+}
