@@ -372,10 +372,10 @@ input[id="6"]:checked ~ .compilacion .compilacion-item[for="6"]{
 }
 .foto-servicio{
     width: 100%;
-    height: 70%;
+    height: 75%;
     background-image: url(./perroservicio2.png);
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: 135%;
     z-index: 3;
     background-position: center;
     max-width: 1349px;
@@ -855,353 +855,347 @@ footer{
     font-size: 2em;
     margin: 0px 10px;
 }
-@media (min-width: 320px) and (max-width: 1349px){
+@media screen and (max-width: 1440px){
     .encabezado{
-        height: 3%;
-    }
-    .logo{
+        max-width: 1440px;
+     }
+     .logo{
         width: 20%;
-        height: 70%;
-    }
-    .contenedorboton{
-        width: 18%;
-        height: 2vh;
+        height: 80%;
+        display: flex;
         align-items: center;
+        padding: 5px;
+        max-width: 1440px;
     }
     .contenedor-slide{
-        height: 30%;
+        max-width: 1440px;
     }
     .quienessomos{
-        width: 100%;
-        height: 30%;
+        max-width: 1440px;
+        justify-content: center;
+    }
+    .contenedor1{
+        max-width: 1440px;
+        justify-content: center;
+        display: flex;
+        position: relative;;
+    }
+    .contenedor-fotocard{
+        max-width: 1440px;
+    }
+    .fotocard{
+        max-width: 1440px;
     }
     .card-quienessomos{
-        width: 70%;
-        height: 80%;
+        max-width: 1440px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 82%;
     }
+     .card-quienessomos h2{
+        max-width: 1440px;
+     }
     .card-quienessomos p{
-        font-size: .65em;
+        font-size: 0.95em;
+        max-width: 1440px;
     }
     .servicios{
-        height: 35%;
-    }
-    .contenedor-servicios1{
-        padding: 10px;
-    }
-    .logo1{
-        height: 7%;
-    }
-    .servicio1{
-        height: 30%;
-        padding: 7px;
-    }
-    .servicio1 p{
-        font-size: 0.65em;
-    }
-    .logo2{
-        height: 7%;
-    }
-    .servicio2{
-        height: 30%;
-        padding: 7px;
-    }
-    .servicio2 p{
-        font-size: 0.65em;
-    }
-    .contenedor-servicios2{
-        padding: 10px;
-    }
-    .logo3{
-        height: 8%;
-    }
-    .servicio3 p{
-        font-size: 0.65em;
+        max-width: 1440px;
     }
     .foto-servicio{
-        height: 50%;
-    }
-    .contenedor-servicios3{
-        padding: 10px;
-    }
-    .logo4{
-        height: 7%;
-    }
-    .servicio4{
-        height: 30%;
-        padding: 7px;
-    }
-    .servicio4 p{
-        font-size: 0.65em;
-    }
-    .logo5{
-        height: 7%;
-    }
-    .servicio5{
-        height: 30%;
-        padding: 7px;
-    }
-    .servicio5 p{
-        font-size: 0.65em;
+        width: 100%;
+        height: 75%;
+        background-image: url(./perroservicio2.png);
+        background-repeat: no-repeat;
+        background-size: 125%;
+        z-index: 3;
+        background-position: center;
+        max-width: 1349px;
     }
     .experiencias{
-        height: 35%;
+        max-width: 1440px;
     }
     .contenedor-experiencias{
         width: 95%;
-        height: 95%;
+        max-width: 1440px;
     }
     .titulo-experiencia{
-        width: 100%;
-        height: 8%;
+        max-width: 1440px;
     }
     .contenedor-cards{
-        flex-direction: column;
-        padding: 5px;
-    }
-    .card-experiencia1{
-        width: 95%;
-        height: 20%;
-        display: flex;
-        flex-direction: row;
-    }
-    .kiara{
-        width: 20%;
-        height: 100%;
-    }
-    .texto-kiara{
-        width: 80%;
-        height: 80%;
-        display: flex;
-        flex-direction: row;
-    }
-    .texto-kiara h4{
-        height: 20%;
-        font-size: 1.5em;
-        padding: 5px;
-        }
-    .texto-kiara p{
-        padding: 5px;
-        font-size: 0.9em;
-    }
-    .card-experiencia2{
-        width: 95%;
-        height: 20%;
-        display: flex;
-        flex-direction: row;
-    }
-    .lupe{
-        width: 20%;
-        height: 100%;
-    }
-    .texto-lupe{
-        width: 80%;
-        height: 80%;
-        display: flex;
-        flex-direction: row;
-    }
-    .texto-lupe h4{
-        height: 20%;
-        font-size: 1.5em;
-        padding: 5px;
-        }
-    .texto-lupe p{
-        padding: 5px;
-        font-size: 0.9em;
-    }
-    .card-experiencia3{
-        width: 95%;
-        height: 20%;
-        display: flex;
-        flex-direction: row;
-    }
-    .chanchas{
-        width: 20%;
-        height: 100%;
-    }
-    .texto-chanchas{
-        width: 80%;
-        height: 80%;
-        display: flex;
-        flex-direction: row;
-    }
-    .texto-chanchas h4{
-        height: 20%;
-        font-size: 1em;
-        padding: 7px;
-        margin-bottom: 10%;
-        }
-    .texto-chanchas p{
-        padding: 5px;
-        font-size: 0.9em;
-    }
-    .card-experiencia4{
-        width: 95%;
-        height: 20%;
-        display: flex;
-        flex-direction: row;
-    }
-    .koby{
-        width: 20%;
-        height: 100%;
-    }
-    .texto-koby{
-        width: 80%;
-        height: 80%;
-        display: flex;
-        flex-direction: row;
-    }
-    .texto-koby h4{
-        height: 20%;
-        font-size: 1.5em;
-        padding: 5px;
-        }
-        .texto-koby p{
-        padding: 5px;
-        font-size: 0.9em;
+        height: 85%;
+        max-width: 1440px;
     }
     .contacto{
-        height: 35%;
-    }
-    form{
-        width: 80%;
-    }
-    footer{
-        height: 4%;
+        height: 90%;
+        max-width: 1440px;
     }
 }
-@media (min-width: 320px) and (max-width: 768px){
-    .encabezado{
-        height: 15%;
-    }
-    .logo{
-        width: 20%;
-        height: 70%;
-    }
+@media screen and (max-width: 1024px){
     .lista-navegacion a{
         font-size: 0.8em;
-    }
-    .contenedorboton{
-        width: 18%;
-        height: 3vh;
-        align-items: center;
     }
     .contenedorboton a{
         font-size: 0.8em;
     }
-    .contenedor-slide{
-        height: 50%;
-    }
-    .quienessomos{
-        width: 100%;
-        height: 30%;
-    }
-    .card-quienessomos{
-        width: 70%;
-        height: 80%;
-    }
+    .card-quienessomos h2{
+        font-size: 1.5em;
+     }
     .card-quienessomos p{
-        font-size: .65em;
-    }
-    .servicios{
-        height: 35%;
-    }
-    .contenedor-servicios1{
-        padding: 10px;
+        font-size: .85em;
     }
     .logo1{
         height: 7%;
     }
-    .servicio1{
-        height: 30%;
-        padding: 7px;
-    }
     .servicio1 p{
-        font-size: 0.65em;
+        font-size: 0.8em;
     }
     .logo2{
         height: 7%;
     }
-    .servicio2{
-        height: 30%;
-        padding: 7px;
-    }
     .servicio2 p{
-        font-size: 0.65em;
-    }
-    .contenedor-servicios2{
-        padding: 10px;
-    }
-    .logo3{
-        height: 8%;
-    }
-    .servicio3 p{
-        font-size: 0.65em;
-    }
-    .foto-servicio{
-        height: 50%;
-    }
-    .contenedor-servicios3{
-        padding: 10px;
+        font-size: 0.8em;
     }
     .logo4{
         height: 7%;
     }
-    .servicio4{
-        height: 30%;
-        padding: 7px;
-    }
     .servicio4 p{
-        font-size: 0.65em;
+        font-size: 0.8em;
     }
     .logo5{
         height: 7%;
     }
-    .servicio5{
-        height: 30%;
+    .servicio5 p{
+        font-size: 0.8em;
+    }
+    .logo3{
+        height: 11%;
+    }
+    .servicio3 p{
+        font-size: 0.8em;
+    }
+    .contenedor-cards{
+        width: 99%;
+        height: 85%;
+    }
+    .texto-kiara{
+        width: 91%;
+        height: 55%;
+    }
+    .texto-kiara h4{
+        font-size: 1em;
+    }
+    .texto-kiara p{
+        font-size: 0.7em;
+    }
+    .texto-lupe{
+        width: 91%;
+        height: 55%;
+    }
+    .texto-lupe h4{
+        font-size: 1em;
+    }
+    .texto-lupe p{
+        font-size: 0.7em;
+    }
+    .texto-chanchas{
+        width: 91%;
+        height: 55%;
+    }
+    .texto-chanchas h4{
+        font-size: 1em;
+    }
+    .texto-chanchas p{
+        font-size: 0.7em;
+    }
+    .texto-koby{
+        width: 91%;
+        height: 55%;
+    }
+    .texto-koby h4{
+        font-size: 1em;
+    }
+    .texto-koby p{
+        font-size: 0.7em;
+    }
+    form{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px){
+    .encabezado{
+        height: 6%;
+    }
+    .logo{
+        width: 20%;
+        height: 75%;
+    }
+    .lista-navegacion a{
+        font-size: 0.6em;
+    }
+    .contenedorboton{
+        height: 4vh;
+    }
+    .contenedorboton a{
+        font-size: 0.6em;
+    }
+    .contenedor-slide{
+        height: 60%;
+    }
+    .quienessomos{
+        height: 65%;
+    }
+    .card-quienessomos{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        display: block;
+        border: 2px solid rgb(217, 137, 137);
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 0;
+        max-width: 1349px;
+     }
+    .contenedor-cardquienessomos{
+        height: 75%;
+    }
+    .card-quienessomos h2{
+        font-size: 1em;
+     }
+    .card-quienessomos p{
+        font-size: .6em;
+    }
+    .card-quienessomos{
+        width: 85%;
+        height: 90%;
+    }
+    .servicios{
+        height: 65%;
+    }
+    .contenedor-servicios1{
+        height: 95%;
         padding: 7px;
     }
+    .logo1{
+        height: 6%;
+    }
+    .servicio1{
+        height: 40%;
+        padding: 5px;
+    }
+    .servicio1 h3{
+        font-size: 0.9em;
+    }
+    .servicio1 p{
+        font-size: 0.55em;
+    }
+    .logo2{
+        height: 6%;
+    }
+    .servicio2{
+        height: 40%;
+        padding: 5px;
+    }
+    .servicio2 h3{
+        font-size: 0.9em;
+    }
+    .servicio2 p{
+        font-size: 0.55em;
+    }
+    .contenedor-servicios3{
+        height: 95%;
+        padding: 7px;
+    }
+    .logo4{
+        height: 6%;
+    }
+    .servicio4{
+        height: 40%;
+    }
+    .servicio4 h3{
+        font-size: 0.9em;
+    }
+    .servicio4 p{
+        font-size: 0.55em;
+    }
+    .logo5{
+        margin-top: 10px;
+        height: 6%;
+    }
+    .servicio5{
+        height: 40%;
+        padding: 5px;
+    }
+    .servicio5 h3{
+        font-size: 0.9em;
+    }
     .servicio5 p{
-        font-size: 0.65em;
+        font-size: 0.55em;
+    }
+    .contenedor-servicios2{
+        height: 95%;
+        padding: 7px;
+    }
+    .foto-servicio{
+        height: 99%;
+        background-image: url(./perroservicio2.png);
+        background-repeat: no-repeat;
+        background-size: 120%;
+    }
+    .logo3{
+        height: 10%;
+    }
+    .servicio3 h3{
+        font-size: 0.9em;
+    }
+    .servicio3 p{
+        font-size: 0.55em;
     }
     .experiencias{
-        height: 35%;
+        height: 65%;
     }
     .contenedor-experiencias{
-        width: 95%;
+        width: 90%;
         height: 95%;
     }
     .titulo-experiencia{
-        width: 100%;
-        height: 8%;
+        height: 7%;
+    }
+    .titulo-experiencia h2{
+        font-size: 1.2em;
     }
     .contenedor-cards{
+        width: 98%;
+        height: 88%;
+        display: flex;
+        align-content: space-around;
         flex-direction: column;
-        padding: 5px;
-    }
-    .card-experiencia1{
+        padding: 8px;
+     }
+     .card-experiencia1{
         width: 95%;
         height: 20%;
         display: flex;
         flex-direction: row;
     }
     .kiara{
-        width: 20%;
+        width: 15%;
         height: 100%;
     }
     .texto-kiara{
-        width: 80%;
-        height: 80%;
+        width: 85%;
+        height: 65%;
         display: flex;
         flex-direction: row;
     }
     .texto-kiara h4{
-        height: 20%;
-        font-size: 1.5em;
-        padding: 5px;
-        }
+        height: 45%;
+        font-size: 1em;
+    }
     .texto-kiara p{
         padding: 5px;
-        font-size: 0.9em;
+        font-size: 0.65em;
     }
     .card-experiencia2{
         width: 95%;
@@ -1210,23 +1204,22 @@ footer{
         flex-direction: row;
     }
     .lupe{
-        width: 20%;
+        width: 15%;
         height: 100%;
     }
     .texto-lupe{
-        width: 80%;
-        height: 80%;
+        width: 85%;
+        height: 65%;
         display: flex;
         flex-direction: row;
     }
     .texto-lupe h4{
-        height: 20%;
-        font-size: 1.5em;
-        padding: 5px;
-        }
+        height: 45%;
+        font-size: 1em;
+    }
     .texto-lupe p{
         padding: 5px;
-        font-size: 0.9em;
+        font-size: 0.65em;
     }
     .card-experiencia3{
         width: 95%;
@@ -1235,24 +1228,23 @@ footer{
         flex-direction: row;
     }
     .chanchas{
-        width: 20%;
+        width: 15%;
         height: 100%;
     }
     .texto-chanchas{
-        width: 80%;
-        height: 80%;
+        width: 85%;
+        height: 70%;
         display: flex;
         flex-direction: row;
     }
     .texto-chanchas h4{
-        height: 20%;
-        font-size: 1em;
-        padding: 7px;
+        height: 45%;
+        font-size: 0.9em;
         margin-bottom: 10%;
         }
     .texto-chanchas p{
         padding: 5px;
-        font-size: 0.9em;
+        font-size: 0.65em;
     }
     .card-experiencia4{
         width: 95%;
@@ -1261,31 +1253,80 @@ footer{
         flex-direction: row;
     }
     .koby{
-        width: 20%;
+        width: 15%;
         height: 100%;
     }
     .texto-koby{
-        width: 80%;
-        height: 80%;
+        width: 85%;
+        height: 65%;
         display: flex;
         flex-direction: row;
     }
     .texto-koby h4{
-        height: 20%;
-        font-size: 1.5em;
+        height: 45%;
+        font-size: 1em;
+    }
+    .texto-koby p{
         padding: 5px;
-        }
-        .texto-koby p{
-        padding: 5px;
-        font-size: 0.9em;
+        font-size: 0.65em;
     }
     .contacto{
-        height: 35%;
+        height: 50%;
     }
+    .p-contacto h3{
+        font-size: 0.7em;
+        height: 3%;
+    }
+    .p-contacto p{
+        font-size: 0.65em;
+    }
+
     form{
         width: 80%;
+        height: 85%;
+    }
+    .form h2{
+        font-size: 0.9em; 
+    }
+    .grupo{
+        position: relative;
+        margin: 20px;
+    }
+    .grupo input, textarea{
+        font-size: 10px;
+        padding: 7px 7px 7px 3px;
+    }
+    .grupo input:focus~label, 
+    input:valid~label, 
+    textarea:focus~label, textarea:valid~label{
+        top: -10px;
+        font-size: 10px;
+    }
+    .grupo label{
+        font-size: 10px;
+        left: 3px;
+        top:7px;
+    }
+    .barra{
+        width: 95%;
+    }
+    button{
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+        margin: 10px auto;
     }
     footer{
-        height: 4%;
+        height: 6%;
+    }
+    .contenedor-iconos{
+        width: 40%;
+        height: 30%;
+        padding: 0px;
+    }
+    .contenedor-iconos i {
+        color: white;
+        font-size: 1.2em;
+        margin: 0px 10px;
     }
 }
