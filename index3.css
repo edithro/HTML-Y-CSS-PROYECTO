@@ -42,6 +42,7 @@ header{
     font-family: 'Noto Sans TC', sans-serif;
     font-family: 'Poppins', sans-serif;
     color: rgb(27, 26, 15, 0.8);
+    margin-left: 10px
 }
 .nav-inicio a:hover{
     color: rgb(228, 12, 35);
@@ -187,4 +188,137 @@ label{
 input:hover{
     color: rgb(228, 12, 35, 0.6);
     font-size: 1.5em;
+}
+@media screen and (max-width: 1440px){
+    .logo{
+        width: 15%;
+        height: 75%;
+    }
+    .nav-inicio{
+        width: 70%;
+        margin-left: 20px;
+    }
+    .contenedorboton{
+        width: 10%;
+        height: 5vh;
+    }
+    .fondo{
+        width: 85%;
+        height: 100%;
+    }    
+}
+@media screen and (Max-width: 1024px){
+    header{
+        height: 8%;
+    }
+    .logo{
+        width: 15%;
+        height: 70%;
+    }
+    .nav-inicio{
+        width: 50%;
+    }
+    .contenedorboton{
+        width: 13%;
+    }
+    .login-inicio{
+        margin-top: 100px;
+        width: 45%;
+    }
+    .fondo img{
+        margin-top: -65px;
+        width: 30%;
+    }
+    .fondo h3{
+        font-size: 27px;
+        margin-bottom: 26px;
+    }
+    .form{
+        width: 85%;
+        height: 65%;
+    }
+    .he{
+        font-size: 15px;
+    }
+    .boton{
+        height: 15%;
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 768px){
+    header{
+        height: 7%;
+    }
+    .logo{
+        width: 15%;
+        height: 60%;
+        padding: 2px;
+    }
+    .logo img{
+        width: 200px;
+        height: 30px;
+    }
+    .nav-inicio{
+        width: 40%;
+        margin-left: 50px;
+    }
+    .nav-inicio a{
+        font-size: 15px;
+    }
+    .contenedorboton{
+        width: 15%;
+        height: 4vh;
+    }
+    .contenedorboton a{
+        font-size: 15px;
+    }
+    .login-inicio{
+        margin-top: 100px;
+        width: 50%;
+    }
+    .fondo img{
+        margin-top: -65px;
+        width: 33%;
+    }
+    .fondo h3{
+        font-size: 25px;
+        margin-bottom: 22px;
+    }
+    .form{
+        width: 90%;
+        height: 60%;
+    }
+    .contenedor-input{
+        margin: 16px 0;
+        justify-content: space-around;
+    }
+    .inp{
+        width: 65%;
+        height: 30px;
+        font-size: 15px;
+    }
+    .fondo form .inp:focus{
+        outline:0px;
+        background-color: rgba(255, 255, 255, .6);
+        border: solid 2px rgba(248, 180, 180, 0.9);
+        color: #000;
+    }
+    label{
+        font-size: 15px;
+    }
+    .contenedor-olvidemipss{
+        width: 100%;
+        height: 20%;
+    }
+    .he{
+        font-size: 15px;
+    }
+    .boton{
+        height: 20%;
+        font-size: 20px;
+    }
+    .fondo form .inp:focus{
+        font-size: 15px;    
+    }
+
 }

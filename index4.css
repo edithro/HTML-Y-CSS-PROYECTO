@@ -155,4 +155,91 @@ h3{
     background-color: rgb(231, 38, 38);
     font-weight: bolder;
 }
-  
+@media screen and (max-width:1024px){
+    .contenedor-registro{
+        height: 85%;
+        margin-top: 20px;
+    }
+    h3{
+        margin-bottom: 25px;
+    }
+    .contenedor-form{
+        width: 40%;
+        height: 88%;
+        padding: 25px;
+    }
+    .contenedor-inputs{
+        width: 85%;
+        height: 65%;
+        padding-left: 37px;
+    }
+    .controls{
+        font-size: 16px;
+    }
+    .contenedor-botones{
+        height: 25%;
+    }
+    .contenedor-botones p{
+        height: 30%;
+        font-size: 13px;
+    }      
+    .registrar{
+        height: 40%;
+    }  
+    .botons{
+        font-size: 17px;
+    }
+    
+}
+@media screen and (max-width:768px){
+    header{
+        height: 7%;
+    }
+    .logo img{
+        width: 200px;
+        height: 30px;
+    }
+    .contenedorboton{
+        height: 4vh;
+    }
+    .contenedorboton a{
+        font-size: 13px;
+    }
+    h3{
+        font-size: 27px;
+        margin-bottom: 35px;
+    }
+    .contenedor-form{
+        width: 40%;
+        height: 80%;
+        padding: 27px;
+    }
+    .contenedor-inputs{
+        width: 85%;
+        height: 60%;
+        padding-left: 27px;
+    }
+    .controls{
+        font-size: 13px;
+    }
+    .controls:focus{
+        font-size: 13px;
+    }
+    .contenedor-botones{
+        height: 28%;
+    }
+    .contenedor-botones p{
+        font-size: 12px;
+    }      
+    .contenedor-botones a{
+        font-size: 12px;
+    }
+    .botons{
+        width: 80%;
+        height: 60%;
+        margin: 7px 0;
+        font-size: 14px;
+    }
+
+
+}
